@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alura challenge</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="contenedor">
+  <header class="contenedor__header">
+    <img src="./public/Logo.png" alt="logo">
+  </header>
+  <main class="contenedor__main">
+    <div>
+      <section class="main__section__izquierda">
+        <div class="main__section__izquierda__input">
+          <input id="texto" class="section__izquierda__input__texto" type="text" placeholder="Ingrese el texto aqui">
+        </div>
+      </section>
+      <section class="main__contenedor__botones" >
+        <div class="main__contenedor__botones__texto">
+          <img width="16" height="16" src="./public/exclamacion.png" alt="">
+          <p>
+            Solo letras minúsculas y sin acentos
+          </p>
+        </div>
+        <div class="main__contenedor__botones__boton">
+          <button class="base__boton boton__encriptar" onclick="encriptar()">Encriptar</button>
+          <button class="base__boton boton__desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+      </section>
+    </div>
+    <div id="contenedor__resultado" class="main__contenedor__resultado">
+      <div class="contenedor__resultado__texto">
+        <p type="text" class="resultado__texto" id="resultadoTexto"></p>
+      </div>
+      <div id="contenedor__resultado__texto__no__encontrado">
+        <div class="resultado__texto__no__encontrado__muñeco">
+          <img width="200" src="./public/Muñeco.png" alt="muñeco">
+        </div>
+        <div class="contenedor__resultado__texto__no__encontrado">
+          <h3 class="textos__no__encontrado">Ningún mensaje fue encontrado</h3>
+          <p id="texto-resultado" class="textos__ingresar__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+      </div>
+      <div class="contenedor__resultado__boton__copiar">
+        <button onclick="copiarTexto()" class="base__boton boton__copiar">Copiar</button>
+      </div>
+    </div>
+  </main>
+    <footer>
+    </footer>
+    <script src="index.js" defer></script>
+
+  </body>
+</html>

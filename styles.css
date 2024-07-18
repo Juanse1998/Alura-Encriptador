@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.contenedor {
+  background: #F3F5FC;
+}
+
+.contenedor__header {
+  margin-right: 80px;
+}
+
+.contenedor__main {
+  display: flex;
+  justify-content: center;
+}
+
+.main__section__izquierda__input {
+  margin-top: 70px;
+}
+
+.section__izquierda__input__texto {
+  background-color: #0a387100;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 48px */
+  font-family: Inter;
+  border: none;
+}
+
+
+.section__izquierda__input__texto::placeholder {
+  color: #0A3871;
+}
+
+.main__contenedor__botones {
+  margin-top: 350px;
+  margin-right: 40px;
+}
+
+.main__contenedor__botones__texto {
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+  color: #495057;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 18px */
+}
+
+.main__contenedor__botones__boton {
+  gap: 24px;
+  display: flex;
+}
+
+.main__contenedor__resultado {
+  width: 400px;
+  height: 600px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  background: var(--White, #FFF);
+  margin-right: 40px;
+  /* shadow */
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.contenedor__resultado__texto {
+  width: 300px;
+  height: 480px;
+  flex-shrink: 0;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.resultado__texto {
+  word-wrap: break-word;
+  color: #495057;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+}
+
+.contenedor__resultado__texto__no__encontrado {
+  color: #343A40;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.8px;
+}
+
+.resultado__texto__no__encontrado__muñeco {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.resultado__texto__no__encontrado__textos {
+  display: block;
+  text-align: center;
+  align-self: stretch;
+  margin-left: 42px;
+  margin-right: 42px;
+}
+
+.contenedor__resultado__boton__copiar {
+  display: flex;
+  justify-content: center;
+}
+
+.base__boton {
+  cursor: pointer;
+  display: flex;
+  width: 250px;
+  padding: 24px;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  justify-content: center;
+}
+
+/* Estilos específicos para cada botón */
+.boton__encriptar {
+  color: white;
+  background: var(--Dark-blue-dark-blue-300, #0A3871);
+}
+
+.boton__desencriptar {
+  border: 1px solid var(--Dark-blue-dark-blue-300, #0A3871);
+  background: #D8DFE8;
+}
+
+.boton__copiar {
+  border-radius: 24px;
+  background-color: white;
+  border: 1px solid #0A3871;  
+}
+
+.textos__ingresar__texto {
+  color: #495057;
+  text-align: center;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+
+@media (max-width: 768px) {
+
+  .contenedor__main {
+    justify-items: center;
+    display: grid;
+  }
+
+  .contenedor__resultado {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__contenedor__resultado {
+    width: 450px;
+    height: auto;
+  }
+
+  .resultado__texto__no__encontrado__muñeco {
+    display: none;
+  }
+  
+  .main__contenedor__resultado{
+    margin-top: 50px;
+    margin-right: 0;
+  }
+
+  .contenedor__resultado__texto {
+    height: 350px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .main__contenedor__resultado {
+    width: 343px;
+  }
+  .main__section__izquierda__input{
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__contenedor__botones {
+    display: grid;
+    flex-direction: row;
+  }
+
+  .main__contenedor__botones__boton {
+    display: grid;
+    flex-direction: row;
+  }
+}
